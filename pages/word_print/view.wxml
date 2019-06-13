@@ -1,0 +1,13 @@
+<!--pages/word_print/view.wxml-->
+<view class='box'>
+  <view class='show'>
+    <view>
+      <image src='/images/p2.jpg' mode='aspectFit'></image>
+      <view class='h1'>{{file_name}}</view>
+    </view>
+  </view>
+  <view class='btn'>
+    <view bindtap='chooseWechatFile'>更换</view>
+    <view bindtap='uploadFile'>确定</view>
+  </view>
+</view>

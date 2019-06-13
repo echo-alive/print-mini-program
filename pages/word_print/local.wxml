@@ -1,0 +1,18 @@
+<!--pages/word_print/view.wxml-->
+
+  <!-->
+  <view class='box'>
+  <view class='show' bindtap='{{file_name?"":"chooseLocalFile"}}'>
+    <view>
+      <image src='{{file_name?"/images/p2.jpg":show_pic}}' mode='aspectFit'></image>
+      <view class='h1'>{{file_name?file_name:"添加文档"}}</view>
+      <view class='tips'>现支持打印的文件格式有：doc、docx、ppt、pptx、xls、pdf、txt</view>
+    </view>
+  </view>
+  <view class='btn'>
+    <view bindtap='{{btn_disabled?"":"chooseLocalFile"}}' class='{{btn_disabled?"disabled":""}}'>更换</view>
+    <view bindtap='{{btn_disabled?"":"uploadFile"}}' class='{{btn_disabled?"disabled":""}}'>确定</view>
+  </view>
+  </view>
+  -->
+  <web-view src="https://print.alive1996.com/web-view/chooseFile.html" bindmessage="msgHandler"></web-view>

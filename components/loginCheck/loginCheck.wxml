@@ -1,0 +1,11 @@
+<!--components/loginCheck/loginCheck.wxml-->
+<view class="setting-modal" wx:if="{{!hasUserInfo && canIUse && impowerShow=='show'}}">
+  <view class="setting-modal-content">
+    <view class="setting-modal-title"><image src='/images/logo.png' mode='widthFix'></image></view>
+    <view class="setting-modal-desc">需要获取您的公开信息(头像、昵称等)</view>
+    <view class="setting-modal-btns">
+      <button plain="{{ true }}" bindtap='cancelGetInfo' class="cancel-btn">取消</button>
+      <button plain="{{ true }}" open-type='getUserInfo' bindgetuserinfo='bindgetuserinfo' class="submit-btn">确定</button>
+    </view>
+  </view>
+</view>

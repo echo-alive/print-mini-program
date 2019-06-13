@@ -1,0 +1,66 @@
+<!--pages/word_print/setting.wxml-->
+<view class='box'>
+  <view class='title'>
+    <view class='h1'>{{file_name}}</view>
+    <view class='yulan' bindtap='yulan'>
+      <image src='/images/see.png' mode='aspectFit'></image> 预览</view>
+  </view>
+  <view class='param'>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class='items'>
+        <label>单双面</label>
+        <view class='input'>
+          <radio-group name='reversible'>
+            <radio checked='true'>单面</radio>
+            <radio class='{{count>1?"":"hide"}}'>双面</radio>
+          </radio-group>
+        </view>
+      </view>
+
+      <view class='items '>
+        <label>份数</label>
+        <view class='input '>
+          <view class='btn {{reduce_disabled?"disabled":""}}' bindtap='numReduce'>
+            <image src='/images/reduce.png' mode='aspectFit'></image>
+          </view>
+          <input type='number' name='num' disabled='true' value='{{num}}' />
+          <view class='btn'  bindtap='numAdd'>
+            <image src='/images/add.png' mode='aspectFit'></image>
+          </view>
+        </view>
+      </view>
+
+      <view class='items '>
+        <label>范围</label>
+        <view class='input '>
+          <input type='number' name='limit_start' value='{{limit_start}}' bindblur='limit_start_blur'/>
+          <view class='to'>~</view>
+          <input type='number' name='limit_end' value='{{limit_end}}'  bindblur='limit_end_blur'/>
+        </view>
+      </view>
+
+      <view class='items'>
+        <label>彩色打印</label>
+        <view class='input'>
+          <radio-group name='color_print'>
+            <radio>是</radio>
+            <radio checked='true'>否</radio>
+          </radio-group>
+        </view>
+      </view>
+
+      <view class='items'>
+        <label>是否公开</label>
+        <view class='input'>
+          <radio-group name='is_public'>
+            <radio>是</radio>
+            <radio checked='true'>否</radio>
+          </radio-group>
+        </view>
+      </view>
+
+
+
+    </form>
+  </view>
+</view>

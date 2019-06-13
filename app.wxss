@@ -1,0 +1,28 @@
+/**app.wxss**/
+page
+.section_box{
+  padding:30rpx;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.hide{
+  display: none;
+}
+page {
+  background-color: #fcfcfc;
+  font-family: 微软雅黑;
+}
+
+.box {
+  width:calc(100% - 60rpx);
+  padding: 30rpx;
+  overflow-x: hidden;
+}

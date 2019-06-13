@@ -1,0 +1,10 @@
+<!--pages/my/index.wxml-->
+<view class='box'>
+  <view class='head'>
+    <view class='pic'>
+      <image src='{{userInfo.avatarUrl?userInfo.avatarUrl:"/images/head.png"}}' mode='cover'></image>
+    </view>
+     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+    <view class='h1' wx:if="{{hasUserInfo&& canIUse}}">{{userInfo.nickName}}</view>
+  </view>
+</view>

@@ -1,0 +1,29 @@
+<!--pages/word_print/index.wxml-->
+<view class='box'>
+
+  <view class='items' bindtap='chooseWechatFile'>
+    <image src='/images/p1.jpg' mode='aspectFit'></image>
+    <view class='txt'>
+      <view class='h1'>选择微信文档打印</view>
+      <view class='des'>从聊天记录中选择文档打印，支持的文件格式有：Word、PPT、PDF</view>
+    </view>
+  </view>
+
+  <view class='items' bindtap='chooseLocalFile'>
+    <image src='/images/p2.jpg' mode='aspectFit'></image>
+    <view class='txt'>
+      <view class='h1'>选择本地文档打印</view>
+      <view class='des'>从手机本地文档选择打印</view>
+    </view>
+  </view>
+
+  <view class='items'>
+    <image src='/images/p3.jpg' mode='aspectFit'></image>
+    <view class='txt'>
+      <view class='h1'>选择文库文档打印</view>
+      <view class='des'>文库文档一键打印，支持的文件格式有：Word、PPT、PDF</view>
+    </view>
+  </view>
+
+
+</view>

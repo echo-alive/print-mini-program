@@ -1,0 +1,102 @@
+/* pages/word_print/setting.wxss */
+
+.title {
+  padding: 40rpx 30rpx;
+  height: 100rpx;
+  background-color: #fff;
+  box-shadow: #ebebeb 0 0 5px;
+  margin-bottom: 30rpx;
+  border-radius: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title .h1 {
+  width: 75%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /*第几行*/
+  -webkit-box-orient: vertical;
+  font-size: 32rpx;
+  color: #333;
+}
+
+.title .yulan {
+  width: 20%;
+  font-size: 28rpx;
+  color: #ffc91f;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.title .yulan image {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 10rpx;
+}
+
+.param {
+  padding: 0 30rpx;
+  background-color: #fff;
+  box-shadow: #ebebeb 0 0 5px;
+  border-radius: 20rpx;
+}
+
+.param .items {
+  padding: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 32rpx;
+  color: #333;
+}
+
+.param .items radio {
+  margin-left: 30rpx;
+}
+
+.param .items label {
+  width: 40%;
+}
+
+.param .items .input {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.param .items .input .btn {
+  width: 35rpx;
+  height: 35rpx;
+  background-color: #ffc91f;
+  text-align: center;
+  line-height: 30rpx;
+  font-weight: bold;
+  border-radius: 5rpx;
+  color: #fff;
+  position: relative;
+  display: block;
+}
+
+.param .items .input .btn image {
+  position: absolute;
+  width:80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+}
+
+.param .items .input .btn.disabled {
+  background-color: #ebebeb;
+}
+
+.param .items .input input {
+  width: 60rpx;
+  text-align: center;
+  font-size: 28rpx;
+  margin: 0 10rpx;
+}

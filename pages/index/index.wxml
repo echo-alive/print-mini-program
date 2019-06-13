@@ -1,0 +1,62 @@
+<view class='box'>
+  <view class='banner'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key='i'>
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" mode="widthFix" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class='items'>
+    <view class='left'  bindtap='word_print' style='background-image: url("https://print.alive1996.com/static/styles/images/word.jpg");'>
+      <view class='h1'>
+        文档打印
+      </view>
+      <view class='des'>
+        一键打印，智能预约
+      </view>
+    </view>
+    <view class='right'>
+      <view class='lite'>
+        <image src='/images/idcard1.png' mode='aspectFit'></image>
+        <view class='h1'>证件复印</view>
+      </view>
+      <view class='lite'>
+        <image src='/images/invoice.png' mode='aspectFit'></image>
+        <view class='h1'>发票复印</view>
+      </view>
+    </view>
+
+  </view>
+
+  <view class='items'>
+    <view class='left' style='background-image: url("https://print.alive1996.com/static/styles/images/photo.jpg");'>
+      <view class='h1'>
+        照片打印
+      </view>
+      <view class='des'>
+        一键打印，智能预约
+      </view>
+    </view>
+    <view class='right'>
+      <view class='lite'>
+        <image src='/images/idcard2.png' mode='aspectFit'></image>
+        <view class='h1'>证件照片</view>
+      </view>
+      <view class='lite'>
+        <image src='/images/voice.png' mode='aspectFit'></image>
+        <view class='h1'>语音照片</view>
+      </view>
+    </view>
+
+  </view>
+
+<view class="section_box">
+  <!-- <button bindtap='loginAgain'>再次授权</button> -->
+  <login-check id="loginCheck"></login-check>
+</view>
+
+
+</view>

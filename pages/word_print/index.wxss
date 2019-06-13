@@ -1,0 +1,33 @@
+/* pages/word_print/index.wxss */
+
+.items {
+  width: calc(100% - 60rpx);
+  padding: 50rpx 30rpx;
+  background-color: #fff;
+  box-shadow: #ebebeb 0 0 5px;
+  margin-bottom: 30rpx;
+  display: flex;
+  align-items: flex-start;
+}
+
+.items image {
+  width: 70rpx;
+  height: 70rpx;
+  display: block;
+}
+
+.items  .txt {
+  width: calc(100% - 100rpx);
+  margin-left: 30rpx;
+}
+.items  .txt .h1{
+  font-size: 36rpx;
+}
+.items  .txt .des{
+  font-size: 22rpx;
+  margin-top: 10rpx;
+  color: grey;
+  line-height: 40rpx;
+  min-height: 80rpx;
+  overflow: hidden;
+}

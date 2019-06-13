@@ -1,0 +1,62 @@
+/* pages/word_print/view.wxss */
+
+.show {
+  width: calc(100% - 60rpx);
+  height: calc((100vw - 60rpx) * 0.85);
+  padding: 30rpx;
+  background-color: #fff;
+  box-shadow: #ebebeb 0 0 5px;
+  margin-bottom: 30rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.show>view {
+  width: 80%;
+}
+
+.show  image {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 0 auto 50rpx;
+  display: block;
+}
+
+.show  .h1 {
+  font-size: 32rpx;
+  width: 100%;
+  overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+  margin: 0 auto;
+}
+.show .tips{
+  font-size: 24rpx;
+  margin-top: 50rpx;
+  color: #808080;
+}
+.btn {
+  width: 100%;
+  margin-top: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn view {
+  width: calc((100% - 80rpx) / 2);
+  text-align: center;
+  font-size: 28rpx;
+  color: #fff;
+  height: 80rpx;
+  border-radius: 10rpx;
+  line-height: 80rpx;
+  background-color: orange;
+}
+.btn view.disabled{
+  background-color: #f5f5f5;
+  color: #808080;
+}
